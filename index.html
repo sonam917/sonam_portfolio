@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel = "stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/996313ef96.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="Images/fav-icon.png">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <img src = "Images/logo.png" class = "logo" alt="">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h3>Hello, This side is</h3> <h1><span>Sonam Pal</span></h1>
+                <h2> I'm a Designer/Developer</h2>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------about-------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/background1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello Everyone, 
+                        I am Sonam Pal... I am a B.tech graduate in Computer Science and Engineering from Eshan College of Engineering, Mathura from <abbr title="Dr. A.P.J ABDUL KALAM TECHNICAL UNIVERSITY, LUCKNOW">AKTU</abbr>.My journey in the world of technology began with a curiosity for creating digital experiences that not only meet but exceed user expectations. My commitment to learning and staying ahead in the ever-evolving field of web development fuels my enthusiasm for creating innovative and user-friendly websites.</p>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Programming Languages</span><br>C, Python, Javascript</li>
+                            <li><span>Web Technologies</span><br>HTML5, CSS3, React js</li>
+                            <li><span>Database Application</span><br>MySql</li>
+                            <li><span>Plateform</span><br>Window</li>
+                            <li><span>Area Of Interest</span><br>Web Development</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Full Stack training</li>
+                            <li><span>2022</span><br>Internship at LetsGrowMore as Web Developer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-22</span><br>B.tech from AKTU Lucknow</li>
+                            <li><span>2018</span><br>Intermediate from UPMSP Allahabad</li>
+                            <li><span>2016</span><br>High school from UPMSP Allahabad</li>
+                        </ul>
+
+                    </div>
+                    <a href="Images/MyCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- ----------------------------------------Skills--------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <p>As a dedicated web developer, I bring a diverse skill set to the table, ensuring a holistic approach to building digital experiences. Proficient in creating well-structured HTML markup and stylish, responsive CSS designs.Experience in developing websites that seamlessly adapt to various devices and screen sizes.Proficient in using Git for version control, facilitating collaboration and code management.Team player with good communication skills, capable of working seamlessly in collaborative environments.</p>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-circle-nodes"></i>
+                    <h2>Web Design</h2>
+                    <p>I provide the services on web designing.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet maxime .
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UI/UX</h2>
+                    <p>I provide the services on web designing.Lorem</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------Projects------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+           
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Age & Gender Detection</h3>
+                        <p>In this app you will able to see your average age and gender, it predict age & gender of the people in an image or video. </p>
+                        <a href="https://github.com/sonam917/Age-and-Gender-detection-.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>To-DO list App</h3>
+                        <p>In this app you can note down your daily to do tasks to avoid the forgetness of any important task.</p>
+                        <a href="https://github.com/sonam917/LGMVIP-WebDev-Task1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Expence Tracker</h3>
+                        <p>This app will help you in tracking your expences.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/sonam917" class="btn">See more</a>
+        </div>
+    </div>
+
+
+   
+    <!-- --------------------------------------Contact------------------------------ -->
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Feel free to reach out! I welcome collaboration and feedback. Connect for inquiries, opportunities, or just to say hello. Let's create something amazing together!!</p>
+                    <p><i class="fa-solid fa-user"></i>Sonam Pal</p>
+                    <p><i class="fa-solid fa-envelope"></i>sonampal917@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Auraiya, UP</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/km-sonam-pal-16108a207"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://m.facebook.com/profile.php?id=100050680369290"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with <i class="fa-solid fa-heart"></i> by Sonam|2023, all rights are reserved!!!</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+ <!-- -------------------------------------------For Side menu----------------------------- -->
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+
+
+
+    <script>
+        let form = document.querySelector('form');
+        form.addEventListener('submit', handleSubmit);
+
+        function handleSubmit(event){
+            event.preventDefault();
+            let formData = new FormData(form);
+            let data = Object.fromEntries(formData);
+            let jsonData = JSON.stringify(data);
+
+
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body : jsonData
+            })
+            .then(res => res.json())
+            .then(result => console.log(result))
+            .catch(err=> console.log(err))
+
+        }
+
+    </script>
+    
+</body>
+</html>
